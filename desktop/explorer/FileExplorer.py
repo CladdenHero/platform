@@ -21,7 +21,3 @@ class FileExplorer(QWidget):
             filter=file_filter
         )
         self.txt.setText(str(response))
-
-        path = response[0]
-
-

@@ -1,5 +1,6 @@
 from PySide6.QtWidgets import QMainWindow
 from FileExplorer import FileExplorer
+from TestView import TestView
 
 
 class MainWindow(QMainWindow):
@@ -10,4 +11,6 @@ class MainWindow(QMainWindow):
         self.setGeometry(100, 100, 600, 600)
 
         fe = FileExplorer()
-        self.setCentralWidget(fe)
+        tv = TestView()
+
+        self.setCentralWidget(tv)
